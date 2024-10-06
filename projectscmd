@@ -1,0 +1,45 @@
+spark-submit --jars home/hduser/install/mysql-connector-java.jar --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --py-files /home/hduser/Spark_pro/common_functions.zip Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/Spark_pro/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+shutil.make_archive("/home/hduser/Spark_pro/common_functions","zip","/home/hduser/PycharmProjects/learning_we43/")
+'/home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/common_functions.zip'
+spark-submit --jars home/hduser/Spark_pro/mysql-connector-java.jar --py-files /home/hduser/Spark_pro/common_functions.zip Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/Spark_pro/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+
+ spark-submit --py-files /home/hduser/Spark_pro/common_functions.zip Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/Spark_pro/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+
+spark-submit  --jars home/hduser/Spark_pro/mysql-connector-java.jar --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --py-files /home/hduser/Spark_pro/common_functions.zip Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/Spark_pro/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+
+
+spark-submit --jars home/hduser/install/mysql-connector-java.jar  --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --py-files /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/common_functions.zip DriverModule.py /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/connection.prop /home/hduser/install/mysql-connector-java.jar /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/app.properties
+shutil.make_archive("/home/hduser/Spark_pro/common_functions","zip","/home/hduser/PycharmProjects/learning_we43/")
+
+spark-submit --packages io.delta:delta-core_2.12:1.2.1 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --py-files /home/hduser/Spark_pro/common_functions.zip Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/Spark_pro/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+
+spark-submit --packages io.delta:delta-core_2.12:1.2.0 --jars /home/hduser/install/mysql-connector-java.jar --py-files /home/hduser/Spark_pro/common_functions.zip Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/Spark_pro/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+spark-submit --packages io.delta:delta-core_2.12:1.2.1  --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --py-files /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/common_functions.zip DriverModule.py /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/connection.prop /home/hduser/install/mysql-connector-java.jar /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/app.properties
+
+spark-submit --packages io.delta:delta-core_2.12:1.2.1 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --py-files /home/hduser/Spark_pro/common_functions.zip /home/hduser/Spark_pro/Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/install/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+
+spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --jars /home/hduser/install/mysql-connector-java.jar --py-files /home/hduser/Spark_pro/common_functions.zip /home/hduser/Spark_pro/Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/Spark_pro/app.properties
+
+
+
+
+
+spark-submit --packages io.delta:delta-core_2.12:1.2.1 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" \
+--conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" \
+--jars /home/hduser/install/mysql-connector-java.jar \
+--py-files /home/hduser/Spark_pro/common_functions.zip Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/Spark_pro/app.properties
+Lastt i used:
+spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"  --jars /home/hduser/install/mysql-connector-java.jar --py-files /home/hduser/Spark_pro/common_functions.zip /home/hduser/Spark_pro/Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/install/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+
+spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" /home/hduser/Spark_pr/Testing.py
+spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --py-files /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/common_functions.zip DriverModule.py /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/connection.prop /home/hduser/install/mysql-connector-java.jar /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/app.properties
+
+spark-submit --packages io.delta:delta-core_2.12:1.2.1 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --py-files /home/hduser/Spark_pro/common_functions.zip /home/hduser/Spark_pro/Mainmethod.py /home/hduser/Spark_pro/connection.prop /home/hduser/install/mysql-connector-java.jar /home/hduser/Spark_pro/app.properties
+spark-submit --packages io.delta:delta-core_2.12:1.2.1 \
+--conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" \
+--conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" \
+--py-files /home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/spark_project_functions.zip \
+/home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/Main_module.py \
+/home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/connection.prop \
+/home/hduser/install/mysql-connector-java.jar \
+/home/hduser/PysparkRetailDatalakeOnpremProject_2_2024/app.properties
